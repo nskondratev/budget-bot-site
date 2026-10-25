@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Budget Bot Privacy Policy</title>
+  <meta name="description" content="How Budget Bot accesses, uses, stores and shares data, including Google user data.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: October 25, 2026</p>
+
+  <p>This policy explains how Budget Bot (“the bot”), a personal Telegram bot with an optional macOS companion app, accesses, uses, stores and shares your data. Budget Bot is run by an individual developer as a hobby project.</p>
+
+  <h2>Google user data the bot accesses</h2>
+  <p>When you sign in with Google, the bot requests the Google Sheets scope (<code>https://www.googleapis.com/auth/spreadsheets</code>). With it, the bot:</p>
+  <ul>
+    <li>appends and edits transaction rows in the spreadsheet you selected with the <code>/sheet</code> command;</li>
+    <li>reads balances, categories, tags, recent operations and statistics from that spreadsheet to show them to you.</li>
+  </ul>
+  <p>The bot works only with the spreadsheet you selected. It does not read, list or modify other files, and it does not access your email, contacts or any other Google data.</p>
+
+  <h2>What the bot stores</h2>
+  <ul>
+    <li>Your Telegram user ID and username.</li>
+    <li>The ID of the spreadsheet you selected.</li>
+    <li>The Google OAuth token issued when you sign in, so the bot can access the spreadsheet without asking you to sign in every time.</li>
+    <li>A cached copy of your category, account and tag names, and your voice dictionary settings.</li>
+    <li>Short-lived drafts of voice-dictated transactions and companion app sessions. These expire automatically.</li>
+  </ul>
+  <p>This data is stored in a database on infrastructure the developer operates (a cloud database or a private home server). Transaction rows themselves stay in your spreadsheet; the bot does not keep a separate copy of your transaction history.</p>
+
+  <h2>How the data is used</h2>
+  <p>Your data is used only to provide the bot’s features to you: recording transactions, showing balances and statistics, and helping you enter transactions by text or voice. It is not used for advertising, profiling, or training machine learning models, and it is not sold.</p>
+
+  <h2>Sharing</h2>
+  <p>Google user data is not shared with or transferred to anyone, with one exception that you control: the optional macOS companion app can use a third-party AI language model to turn dictated text into transactions and to answer questions about your finances. In that case the app sends the relevant text and data (for example, account and category names or the result of a question about your budget) directly to the AI provider you configured, using your own API key, only to produce the answer you asked for. If you do not configure an AI provider, nothing is sent.</p>
+  <p>Data may also be disclosed if required by law.</p>
+
+  <h2>Limited Use</h2>
+  <p>Budget Bot’s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Retention and deletion</h2>
+  <ul>
+    <li>You can revoke the bot’s access to your Google account at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. After that the bot can no longer read or write your spreadsheet.</li>
+    <li>To have your stored data deleted, contact the developer (see below). Your stored records, including the OAuth token, will be deleted.</li>
+    <li>Drafts and companion app sessions are deleted automatically when they expire.</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>Connections to Google, Telegram and the bot’s backend use HTTPS. Access to the database is restricted to the developer.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be published on this page with a new “Last updated” date.</p>
+
+  <h2>Contact</h2>
+  <p>For questions or deletion requests, open an issue at <a href="https://github.com/nskondratev/budget-bot-site/issues">github.com/nskondratev/budget-bot-site/issues</a> or use the support email shown on the Google sign-in screen.</p>
+
+  <footer>
+    <a href="./">Budget Bot home</a>
+  </footer>
+</main>
+</body>
+</html>

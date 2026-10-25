@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Budget Bot</title>
+  <meta name="description" content="Budget Bot is a personal Telegram bot that records expenses and income in your own Google Sheets spreadsheet.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Budget Bot</h1>
+  <p class="lead">A personal Telegram bot that records expenses, income and transfers in your own Google Sheets spreadsheet.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>You send a short message such as <code>Card - Groceries: 2000</code>, and the bot appends the transaction to your spreadsheet.</li>
+    <li>It reads account balances, categories, recent operations and current-month statistics from the same spreadsheet and shows them in Telegram.</li>
+    <li>An optional macOS companion app lets you dictate transactions by voice, review them before saving, and edit existing rows.</li>
+  </ul>
+
+  <h2>How Google access is used</h2>
+  <p>To read and write your budget, Budget Bot asks you to sign in with Google and grant access to Google Sheets (<code>https://www.googleapis.com/auth/spreadsheets</code>). The bot only works with the one spreadsheet you choose with the <code>/sheet</code> command. It does not open, list or modify any other files in your Google account.</p>
+  <p>Budget Bot is a hobby project run by an individual developer for personal use. It is not affiliated with Google or Telegram.</p>
+
+  <h2>Privacy</h2>
+  <p>Read the <a href="privacy.html">Privacy Policy</a> to learn what data the bot stores and how to revoke access.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> ·
+    <a href="https://github.com/nskondratev/budget-bot-site/issues">Contact</a>
+  </footer>
+</main>
+</body>
+</html>
